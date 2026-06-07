@@ -1,0 +1,21 @@
+# requirements_phase2.txt
+# Install into your existing banglalex-env:
+#   pip install -r requirements_phase2.txt
+#
+# Notes
+# -----
+# • sentence-transformers pulls in PyTorch automatically.
+#   If you already have torch+cuda installed (for Phase 1 / Groq work),
+#   it will use your GPU automatically — no extra config needed.
+# • faiss-cpu is fine for this scale (≤ 100k chunks).
+#   The embedding step (sentence-transformers) is the only GPU-bound part.
+# • kaggle is only needed for the one-time dataset download step.
+
+sentence-transformers>=2.7.0
+faiss-cpu>=1.8.0
+numpy>=1.24.0
+pandas>=2.0.0
+tqdm>=4.66.0
+
+# optional — for Kaggle dataset download via CLI
+# kaggle>=1.6.0
