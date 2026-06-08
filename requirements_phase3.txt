@@ -1,0 +1,9 @@
+# requirements_phase3.txt
+# Install into your existing banglalex-env:
+#   pip install -r requirements_phase3.txt
+#
+# groq is likely already installed from Phase 1.
+# python-dotenv may also already be installed.
+
+groq>=0.9.0
+python-dotenv>=1.0.0
