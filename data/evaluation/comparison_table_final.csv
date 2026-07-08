@@ -1,0 +1,5 @@
+method,n_total,n_decided,overall_accuracy_%,macro_precision_%,macro_recall_%,macro_f1_%,land_%,contract_%,service_%,favorable_f1,unfavorable_f1,abstention_%
+Majority Class,90,90,61.11,30.55,50.00,37.93,66.67,40.00,76.67,0.7586,0.0000,0.00
+LLM-only (no RAG),90,86,59.30,61.66,61.77,59.30,46.43,64.29,66.67,0.5977,0.5882,4.44
+XLM-RoBERTa (fine-tuned),90,90,75.56,74.35,74.81,74.54,70.00,73.33,83.33,0.7963,0.6944,0.00
+BanglaLex (full),90,90,93.33,95.08,91.43,92.73,93.33,86.67,100.00,0.9483,0.9062,0.00

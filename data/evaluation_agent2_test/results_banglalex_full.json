@@ -1,0 +1,50 @@
+[
+  {
+    "citation": "18 SCOB [2023] HCD 257",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.8,
+    "correct": true
+  },
+  {
+    "citation": "17 SCOB [2023] HCD 14",
+    "domain": "contract",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.8,
+    "correct": true
+  },
+  {
+    "citation": "AUG1-18 SCOB [2023] HCD 5",
+    "domain": "land",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.8,
+    "correct": true
+  },
+  {
+    "citation": "5 SCOB [2015] HCD 96",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "unfavorable",
+    "confidence": 0.7,
+    "correct": false
+  },
+  {
+    "citation": "AUG1-20 SCOB [2025] AD 6",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.8,
+    "correct": true
+  },
+  {
+    "citation": "12 SCOB [2019] HCD 231",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.8,
+    "correct": true
+  }
+]

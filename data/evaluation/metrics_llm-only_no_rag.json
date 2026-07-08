@@ -1,0 +1,29 @@
+{
+  "method": "LLM-only (no RAG)",
+  "n_total": 90,
+  "n_decided": 86,
+  "abstention_rate": 0.0444,
+  "overall_accuracy": 0.593,
+  "macro_f1": 0.593,
+  "favorable_f1": 0.5977,
+  "favorable_prec": 0.7429,
+  "favorable_rec": 0.5,
+  "unfavorable_f1": 0.5882,
+  "unfavorable_prec": 0.4902,
+  "unfavorable_rec": 0.7353,
+  "domain_accuracy": {
+    "contract": 0.6429,
+    "land": 0.4643,
+    "service": 0.6667
+  },
+  "confusion_matrix": {
+    "unfavorable": {
+      "unfavorable": 25,
+      "favorable": 9
+    },
+    "favorable": {
+      "unfavorable": 26,
+      "favorable": 26
+    }
+  }
+}

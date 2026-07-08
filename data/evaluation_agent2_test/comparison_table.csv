@@ -1,0 +1,5 @@
+method,n_total,n_decided,overall_accuracy,macro_precision,macro_recall,macro_f1,land_accuracy,contract_accuracy,service_accuracy,favorable_f1,unfavorable_f1,abstention_rate
+Majority Class,6,6,66.67,33.33,50.00,40.00,50.00,50.00,100.00,0.8000,0.0000,0.00
+Majority Class,6,6,66.67,33.33,50.00,40.00,50.00,50.00,100.00,0.8000,0.0000,0.00
+BanglaLex (full),5,5,80.00,83.33,83.33,80.00,50.00,100.00,100.00,0.8000,0.8000,0.00
+BanglaLex (full),6,6,83.33,83.33,87.50,82.86,50.00,100.00,100.00,0.8571,0.8000,0.00

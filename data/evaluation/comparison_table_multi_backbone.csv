@@ -1,0 +1,7 @@
+method,backbone,accuracy_%,macro_precision_%,macro_recall_%,macro_f1_%,land_%,contract_%,service_%,abstention_%
+BanglaLex (full),Llama-4-Scout-17B (Groq),93.3,95.1,91.4,92.7,93.3,86.7,100.0,0.0
+LLM-only (no RAG),Llama-4-Scout-17B (Groq),59.3,61.7,61.8,59.3,46.4,64.3,66.7,4.4
+Majority Class,—,61.1,30.6,50.0,37.9,66.7,40.0,76.7,0.0
+XLM-RoBERTa (fine-tuned),—,75.6,74.4,74.8,74.5,70.0,73.3,83.3,0.0
+BanglaLex (full),Gemini-3.1-Flash-Lite,97.8,97.3,98.2,97.7,93.3,100.0,100.0,0.0
+LLM-only (no RAG),Gemini-3.1-Flash-Lite,76.1,75.2,76.3,75.5,69.6,68.4,88.0,25.6

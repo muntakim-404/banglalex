@@ -8,12 +8,11 @@ __pycache__/
 data/raw/
 
 # Phase 2 — large knowledge base files (rebuild with phase2_build_kb.py)
-data/knowledge_base/faiss_index.bin
-data/knowledge_base/metadata.json
-data/knowledge_base/chunks.json
+data/knowledge_base/
 
 # Raw dataset files (re-download from Kaggle)
 data/statutes/processed_law.json
 data/statutes/meta.json
 data/statutes/filtered_act_list.csv
 data/statutes/acts/
+.env

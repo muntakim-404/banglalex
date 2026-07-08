@@ -1,0 +1,86 @@
+[
+  {
+    "method": "Majority Class",
+    "n_total": 90,
+    "n_decided": 90,
+    "abstention_rate": 0.0,
+    "overall_accuracy": 0.6111,
+    "macro_f1": 0.3793,
+    "favorable_f1": 0.7586,
+    "favorable_prec": 0.6111,
+    "favorable_rec": 1.0,
+    "unfavorable_f1": 0.0,
+    "unfavorable_prec": 0.0,
+    "unfavorable_rec": 0.0,
+    "domain_accuracy": {
+      "contract": 0.4,
+      "land": 0.6667,
+      "service": 0.7667
+    },
+    "confusion_matrix": {
+      "unfavorable": {
+        "favorable": 35
+      },
+      "favorable": {
+        "favorable": 55
+      }
+    }
+  },
+  {
+    "method": "LLM-only (no RAG)",
+    "n_total": 90,
+    "n_decided": 86,
+    "abstention_rate": 0.0444,
+    "overall_accuracy": 0.593,
+    "macro_f1": 0.593,
+    "favorable_f1": 0.5977,
+    "favorable_prec": 0.7429,
+    "favorable_rec": 0.5,
+    "unfavorable_f1": 0.5882,
+    "unfavorable_prec": 0.4902,
+    "unfavorable_rec": 0.7353,
+    "domain_accuracy": {
+      "contract": 0.6429,
+      "land": 0.4643,
+      "service": 0.6667
+    },
+    "confusion_matrix": {
+      "unfavorable": {
+        "unfavorable": 25,
+        "favorable": 9
+      },
+      "favorable": {
+        "unfavorable": 26,
+        "favorable": 26
+      }
+    }
+  },
+  {
+    "method": "BanglaLex (full)",
+    "n_total": 90,
+    "n_decided": 90,
+    "abstention_rate": 0.0,
+    "overall_accuracy": 0.9333,
+    "macro_f1": 0.9273,
+    "favorable_f1": 0.9483,
+    "favorable_prec": 0.9016,
+    "favorable_rec": 1.0,
+    "unfavorable_f1": 0.9062,
+    "unfavorable_prec": 1.0,
+    "unfavorable_rec": 0.8286,
+    "domain_accuracy": {
+      "contract": 0.8667,
+      "land": 0.9333,
+      "service": 1.0
+    },
+    "confusion_matrix": {
+      "unfavorable": {
+        "unfavorable": 29,
+        "favorable": 6
+      },
+      "favorable": {
+        "favorable": 55
+      }
+    }
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "method": "Majority Class",
+  "n_total": 90,
+  "n_decided": 90,
+  "abstention_rate": 0.0,
+  "overall_accuracy": 0.6111,
+  "macro_f1": 0.3793,
+  "favorable_f1": 0.7586,
+  "favorable_prec": 0.6111,
+  "favorable_rec": 1.0,
+  "unfavorable_f1": 0.0,
+  "unfavorable_prec": 0.0,
+  "unfavorable_rec": 0.0,
+  "domain_accuracy": {
+    "contract": 0.4,
+    "land": 0.6667,
+    "service": 0.7667
+  },
+  "confusion_matrix": {
+    "unfavorable": {
+      "favorable": 35
+    },
+    "favorable": {
+      "favorable": 55
+    }
+  }
+}
