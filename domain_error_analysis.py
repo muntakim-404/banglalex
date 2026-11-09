@@ -13,14 +13,16 @@ Usage (from project root):
     python domain_error_analysis.py
 """
 
+import os
+EVAL_DIR = os.environ.get("BANGLALEX_EVAL_DIR", "data/evaluation_clean")
 import json
 import csv
 import statistics
 from pathlib import Path
 from collections import defaultdict
 
-RESULTS_PATH = Path("data/evaluation/results_banglalex_full.json")
-OUTPUT_DIR   = Path("data/evaluation")
+RESULTS_PATH = Path(f"{EVAL_DIR}/results_banglalex_full.json")
+OUTPUT_DIR   = Path(EVAL_DIR)
 
 with open(RESULTS_PATH, encoding="utf-8") as f:
     results = json.load(f)

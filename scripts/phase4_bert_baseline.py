@@ -246,7 +246,7 @@ def evaluate_model(model, loader, device):
 def parse_args():
     p = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     p.add_argument("--cases-path",  default="data/annotated/cases_augmented.json")
-    p.add_argument("--output-dir",  default="data/evaluation")
+    p.add_argument("--output-dir",  default="data/evaluation_clean")
     p.add_argument("--model",       default="xlm-roberta-base")
     p.add_argument("--epochs",      type=int,   default=10,
                    help="More epochs needed for small dataset.")

@@ -12,11 +12,13 @@ This script distinguishes (A) from (B).
 Usage:
     python domain_fp_rate.py
 """
+import os
+EVAL_DIR = os.environ.get("BANGLALEX_EVAL_DIR", "data/evaluation_clean")
 import json
 from pathlib import Path
 from collections import defaultdict
 
-with open("data/evaluation/results_banglalex_full.json", encoding="utf-8") as f:
+with open(f"{EVAL_DIR}/results_banglalex_full.json", encoding="utf-8") as f:
     results = json.load(f)
 
 DOMAINS = ["land", "contract", "service"]

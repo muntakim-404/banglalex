@@ -107,7 +107,7 @@ def parse_args():
                    help="Cases per domain. 25 × 3 = 75 total fits within 100k token budget.")
     p.add_argument("--kb-dir",                     default="data/knowledge_base")
     p.add_argument("--cases-path",                 default="data/annotated/cases_augmented.json")
-    p.add_argument("--output-dir",                 default="data/evaluation")
+    p.add_argument("--output-dir",                 default="data/evaluation_clean")
     p.add_argument("--model",
                    default="llama-3.3-70b-versatile",
                    help="Fix 4: use the 70b model for better legal reasoning.")

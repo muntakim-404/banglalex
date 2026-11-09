@@ -7,6 +7,8 @@ sample, with FP error counts annotated above each unfavorable bar.
 Usage (from project root):
     python domain_composition_chart.py
 """
+import os
+EVAL_DIR = os.environ.get("BANGLALEX_EVAL_DIR", "data/evaluation_clean")
 import json
 from pathlib import Path
 from collections import defaultdict
@@ -14,7 +16,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
 
-with open("data/evaluation/results_banglalex_full.json", encoding="utf-8") as f:
+with open(f"{EVAL_DIR}/results_banglalex_full.json", encoding="utf-8") as f:
     results = json.load(f)
 
 DOMAINS = ["Land", "Contract", "Service"]
@@ -104,7 +106,7 @@ ax.legend(
 )
 
 # ── Save ───────────────────────────────────────────────────────────────────────
-out = Path("data/evaluation/domain_composition_chart.png")
+out = Path(f"{EVAL_DIR}/domain_composition_chart.png")
 plt.tight_layout()
 plt.savefig(out, dpi=200, bbox_inches="tight")
 print(f"Saved → {out}")

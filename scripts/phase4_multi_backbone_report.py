@@ -10,11 +10,11 @@ Usage
     python scripts/phase4_multi_backbone_report.py
 
 Reads:
-    data/evaluation/metrics_*.json          (backbone 1 — Llama + BERT baseline)
-    data/evaluation_gemini/metrics_*.json   (backbone 2 — Gemini)
+    data/evaluation_clean/metrics_*.json          (backbone 1 — Llama + BERT baseline)
+    data/evaluation_clean_gemini/metrics_*.json   (backbone 2 — Gemini)
 
 Writes:
-    data/evaluation/comparison_table_multi_backbone.csv
+    data/evaluation_clean/comparison_table_multi_backbone.csv
 """
 
 import json
@@ -38,10 +38,10 @@ except ImportError:
         return (m.get("favorable_rec", 0) + m.get("unfavorable_rec", 0)) / 2
 
 
-BACKBONE_1_DIR   = Path("data/evaluation")
-BACKBONE_1_LABEL = "Llama-4-Scout-17B (Groq)"
+BACKBONE_1_DIR   = Path("data/evaluation_clean")
+BACKBONE_1_LABEL = "openai/gpt-oss-120b (Groq)"
 
-BACKBONE_2_DIR   = Path("data/evaluation_gemini")
+BACKBONE_2_DIR   = Path("data/evaluation_clean_gemini")
 BACKBONE_2_LABEL = "Gemini-3.1-Flash-Lite"
 
 BACKBONE_INDEPENDENT = {"Majority Class", "XLM-RoBERTa (fine-tuned)"}

@@ -1,7 +1,7 @@
 """
 Phase 4 — Final Comparison Report
 ===================================
-Reads all saved evaluation results from data/evaluation/ and
+Reads all saved evaluation results from data/evaluation_clean/ and
 prints the complete comparison table (GLARE-style: Acc, Ma-P, Ma-R, Ma-F).
 
 Run this after ALL evaluations are complete.
@@ -19,7 +19,7 @@ sys.path.insert(0, str(REPO_ROOT))
 
 from src.evaluation.metrics import print_report, _get_macro_p, _get_macro_r
 
-output_dir = Path("data/evaluation")
+output_dir = Path("data/evaluation_clean")
 
 # Load all saved metric files
 metrics_files = sorted(output_dir.glob("metrics_*.json"))
@@ -35,7 +35,7 @@ for mf in metrics_files:
           f"F1={m.get('macro_f1',0)*100:.1f}%)")
 
 if not all_metrics:
-    print("No evaluation results found in data/evaluation/")
+    print("No evaluation results found in data/evaluation_clean/")
     sys.exit(1)
 
 # Sort by macro F1

@@ -2,10 +2,12 @@
 Inspect stored results for the 6 error cases — check what fields
 are already saved before deciding whether to re-run the pipeline.
 """
+import os
+EVAL_DIR = os.environ.get("BANGLALEX_EVAL_DIR", "data/evaluation_clean")
 import json
 from pathlib import Path
 
-with open("data/evaluation/results_banglalex_full.json", encoding="utf-8") as f:
+with open(f"{EVAL_DIR}/results_banglalex_full.json", encoding="utf-8") as f:
     results = json.load(f)
 
 errors = [r for r in results if not r["correct"]]

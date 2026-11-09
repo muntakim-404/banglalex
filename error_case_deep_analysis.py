@@ -13,10 +13,12 @@ Usage (from project root):
     python error_case_deep_analysis.py
 
 Cost: ~6 API calls, ~6,000 tokens total. Takes ~2 minutes.
-Output: data/evaluation/error_case_analysis.txt (human-readable report)
-        data/evaluation/error_case_analysis.json (structured, for appendix)
+Output: ${BANGLALEX_EVAL_DIR}/error_case_analysis.txt (human-readable report)
+        ${BANGLALEX_EVAL_DIR}/error_case_analysis.json (structured, for appendix)
 """
 
+import os
+EVAL_DIR = os.environ.get("BANGLALEX_EVAL_DIR", "data/evaluation_clean")
 import json
 import sys
 import time
@@ -44,7 +46,7 @@ ERROR_CITATIONS = {
 MODEL      = "meta-llama/llama-4-scout-17b-16e-instruct"
 CASES_PATH = Path("data/annotated/cases_augmented.json")
 KB_DIR     = Path("data/knowledge_base")
-OUTPUT_DIR = Path("data/evaluation")
+OUTPUT_DIR = Path(EVAL_DIR)
 
 # ── Load dataset ───────────────────────────────────────────────────────────────
 with open(CASES_PATH, encoding="utf-8") as f:
