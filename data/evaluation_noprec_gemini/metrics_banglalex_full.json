@@ -1,0 +1,31 @@
+{
+  "method": "BanglaLex (full)",
+  "n_total": 60,
+  "n_decided": 59,
+  "abstention_rate": 0.0167,
+  "overall_accuracy": 0.7119,
+  "macro_f1": 0.7065,
+  "macro_precision": 0.7068,
+  "macro_recall": 0.7168,
+  "favorable_f1": 0.7463,
+  "favorable_prec": 0.8065,
+  "favorable_rec": 0.6944,
+  "unfavorable_f1": 0.6667,
+  "unfavorable_prec": 0.6071,
+  "unfavorable_rec": 0.7391,
+  "domain_accuracy": {
+    "contract": 0.6842,
+    "land": 0.7,
+    "service": 0.75
+  },
+  "confusion_matrix": {
+    "unfavorable": {
+      "unfavorable": 17,
+      "favorable": 6
+    },
+    "favorable": {
+      "unfavorable": 11,
+      "favorable": 25
+    }
+  }
+}

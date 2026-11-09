@@ -1,0 +1,93 @@
+[
+  {
+    "method": "Majority Class",
+    "n_total": 60,
+    "n_decided": 60,
+    "abstention_rate": 0.0,
+    "overall_accuracy": 0.6167,
+    "macro_f1": 0.3814,
+    "macro_precision": 0.3083,
+    "macro_recall": 0.5,
+    "favorable_f1": 0.7629,
+    "favorable_prec": 0.6167,
+    "favorable_rec": 1.0,
+    "unfavorable_f1": 0.0,
+    "unfavorable_prec": 0.0,
+    "unfavorable_rec": 0.0,
+    "domain_accuracy": {
+      "contract": 0.35,
+      "land": 0.7,
+      "service": 0.8
+    },
+    "confusion_matrix": {
+      "unfavorable": {
+        "favorable": 23
+      },
+      "favorable": {
+        "favorable": 37
+      }
+    }
+  },
+  {
+    "method": "LLM-only (no RAG)",
+    "n_total": 60,
+    "n_decided": 50,
+    "abstention_rate": 0.1667,
+    "overall_accuracy": 0.84,
+    "macro_f1": 0.8302,
+    "macro_precision": 0.825,
+    "macro_recall": 0.8385,
+    "favorable_f1": 0.871,
+    "favorable_prec": 0.9,
+    "favorable_rec": 0.8438,
+    "unfavorable_f1": 0.7895,
+    "unfavorable_prec": 0.75,
+    "unfavorable_rec": 0.8333,
+    "domain_accuracy": {
+      "contract": 0.7857,
+      "land": 0.8333,
+      "service": 0.8889
+    },
+    "confusion_matrix": {
+      "unfavorable": {
+        "unfavorable": 15,
+        "favorable": 3
+      },
+      "favorable": {
+        "unfavorable": 5,
+        "favorable": 27
+      }
+    }
+  },
+  {
+    "method": "BanglaLex (full)",
+    "n_total": 60,
+    "n_decided": 60,
+    "abstention_rate": 0.0,
+    "overall_accuracy": 0.75,
+    "macro_f1": 0.7413,
+    "macro_precision": 0.7387,
+    "macro_recall": 0.7479,
+    "favorable_f1": 0.7887,
+    "favorable_prec": 0.8235,
+    "favorable_rec": 0.7568,
+    "unfavorable_f1": 0.6939,
+    "unfavorable_prec": 0.6538,
+    "unfavorable_rec": 0.7391,
+    "domain_accuracy": {
+      "contract": 0.75,
+      "land": 0.7,
+      "service": 0.8
+    },
+    "confusion_matrix": {
+      "unfavorable": {
+        "unfavorable": 17,
+        "favorable": 6
+      },
+      "favorable": {
+        "unfavorable": 9,
+        "favorable": 28
+      }
+    }
+  }
+]

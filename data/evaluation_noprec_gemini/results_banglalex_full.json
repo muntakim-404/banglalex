@@ -1,0 +1,482 @@
+[
+  {
+    "citation": "9 SCOB [2017] HCD 127",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.95,
+    "correct": true
+  },
+  {
+    "citation": "18 SCOB [2023] HCD 4",
+    "domain": "contract",
+    "ground_truth": "favorable",
+    "predicted": "unfavorable",
+    "confidence": 0.75,
+    "correct": false
+  },
+  {
+    "citation": "16 SCOB [2022] HCD 3",
+    "domain": "contract",
+    "ground_truth": "favorable",
+    "predicted": "uncertain",
+    "confidence": 0.3,
+    "correct": false
+  },
+  {
+    "citation": "8 SCOB [2016] HCD 84",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.95,
+    "correct": true
+  },
+  {
+    "citation": "18 SCOB [2023] HCD 12",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.65,
+    "correct": true
+  },
+  {
+    "citation": "19 SCOB [2024] AD 8",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": false
+  },
+  {
+    "citation": "18 SCOB [2023] AD 7",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "18 SCOB [2023] HCD 8",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "favorable",
+    "confidence": 0.65,
+    "correct": false
+  },
+  {
+    "citation": "5 SCOB [2015] HCD 6",
+    "domain": "contract",
+    "ground_truth": "favorable",
+    "predicted": "unfavorable",
+    "confidence": 0.95,
+    "correct": false
+  },
+  {
+    "citation": "17 SCOB [2023] HCD 14",
+    "domain": "contract",
+    "ground_truth": "favorable",
+    "predicted": "unfavorable",
+    "confidence": 0.75,
+    "correct": false
+  },
+  {
+    "citation": "8 SCOB [2016] HCD 1",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "16 SCOB [2022] HCD 151",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "17 SCOB [2023] HCD 13",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.75,
+    "correct": true
+  },
+  {
+    "citation": "19 SCOB [2024] AD 6",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.95,
+    "correct": true
+  },
+  {
+    "citation": "18 SCOB [2023] HCD 213",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.65,
+    "correct": true
+  },
+  {
+    "citation": "16 SCOB [2022] HCD 9",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": false
+  },
+  {
+    "citation": "5 SCOB [2015] HCD 74",
+    "domain": "contract",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "8 SCOB [2016] HCD 23",
+    "domain": "contract",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": true
+  },
+  {
+    "citation": "20 SCOB [2025] HCD 13",
+    "domain": "contract",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "7 SCOB [2016] HCD 156",
+    "domain": "contract",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "10 SCOB [2018] HCD 234",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.9,
+    "correct": true
+  },
+  {
+    "citation": "18 SCOB [2023] HCD 49",
+    "domain": "land",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "16 SCOB [2022] HCD 6",
+    "domain": "land",
+    "ground_truth": "unfavorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": false
+  },
+  {
+    "citation": "5 SCOB [2015] HCD 96",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "19 SCOB [2024] HCD 14",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "unfavorable",
+    "confidence": 0.65,
+    "correct": false
+  },
+  {
+    "citation": "16 SCOB [2022] HCD 70",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "17 SCOB [2023] HCD 93",
+    "domain": "land",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "16 SCOB [2022] HCD 37",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "7 SCOB [2016] HCD 64",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "unfavorable",
+    "confidence": 0.85,
+    "correct": false
+  },
+  {
+    "citation": "20 SCOB [2025] HCD 14",
+    "domain": "land",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "19 SCOB [2024] HCD 18",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "unfavorable",
+    "confidence": 0.85,
+    "correct": false
+  },
+  {
+    "citation": "14 SCOB [2020] HCD 4",
+    "domain": "land",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.9,
+    "correct": true
+  },
+  {
+    "citation": "13 SCOB [2020] HCD 9",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.95,
+    "correct": true
+  },
+  {
+    "citation": "15 SCOB [2021] AD 6",
+    "domain": "land",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.75,
+    "correct": true
+  },
+  {
+    "citation": "16 SCOB [2022] HCD 4",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.65,
+    "correct": true
+  },
+  {
+    "citation": "19 SCOB [2024] HCD 7",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "unfavorable",
+    "confidence": 0.85,
+    "correct": false
+  },
+  {
+    "citation": "8 SCOB [2016] HCD 29",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": true
+  },
+  {
+    "citation": "20 SCOB [2024] HCD 15",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "unfavorable",
+    "confidence": 0.75,
+    "correct": false
+  },
+  {
+    "citation": "18 SCOB [2023] AD 4",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "19 SCOB [2024] AD 1",
+    "domain": "land",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "20 SCOB [2025] AD 3",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": true
+  },
+  {
+    "citation": "20 SCOB [2025] AD 6",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": true
+  },
+  {
+    "citation": "6 SCOB [2016] HCD 66",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "16 SCOB [2022] AD 2",
+    "domain": "service",
+    "ground_truth": "unfavorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": false
+  },
+  {
+    "citation": "15 SCOB [2021] AD 7",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": true
+  },
+  {
+    "citation": "4 SCOB [2015] HCD 42",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "unfavorable",
+    "confidence": 0.75,
+    "correct": false
+  },
+  {
+    "citation": "6 SCOB [2016] HCD 34",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "6 SCOB [2016] HCD 124",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "unfavorable",
+    "confidence": 0.75,
+    "correct": false
+  },
+  {
+    "citation": "11 SCOB [2019] HCD 46",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": true
+  },
+  {
+    "citation": "12 SCOB [2019] HCD 15",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": true
+  },
+  {
+    "citation": "19 SCOB [2024] HCD 2",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "17 SCOB [2023] HCD 108",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.9,
+    "correct": true
+  },
+  {
+    "citation": "16 SCOB [2022] AD 7",
+    "domain": "service",
+    "ground_truth": "unfavorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": false
+  },
+  {
+    "citation": "16 SCOB [2022] HCD 7",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": true
+  },
+  {
+    "citation": "19 SCOB [2024] AD 5",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "unfavorable",
+    "confidence": 0.75,
+    "correct": false
+  },
+  {
+    "citation": "18 SCOB [2023] AD 6",
+    "domain": "service",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "12 SCOB [2019] HCD 309",
+    "domain": "service",
+    "ground_truth": "unfavorable",
+    "predicted": "unfavorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "5 SCOB [2015] HCD 40",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "6 SCOB [2016] HCD 34",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.85,
+    "correct": true
+  },
+  {
+    "citation": "10 SCOB [2018] HCD 1",
+    "domain": "service",
+    "ground_truth": "favorable",
+    "predicted": "favorable",
+    "confidence": 0.75,
+    "correct": true
+  }
+]

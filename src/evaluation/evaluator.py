@@ -16,7 +16,9 @@ Fix 4: Applied at script level — use llama-3.3-70b-versatile with 25 cases/dom
 """
 
 import json
+import os
 import random
+import re
 import logging
 import time
 from collections import defaultdict
@@ -26,6 +28,16 @@ from typing      import Dict, List, Optional
 import numpy as np
 
 from .metrics import normalize_outcome
+
+
+def case_family(citation: str) -> str:
+    """
+    Map a citation to its augmentation family.
+    'AUG2-17 SCOB [2023] HCD 14' -> '17 SCOB [2023] HCD 14'
+    Augmented copies are LLM paraphrases of a source case and carry the SAME
+    outcome label, so they must never appear as precedent for their own family.
+    """
+    return re.sub(r"^AUG\d+-", "", str(citation or "")).strip()
 
 logger = logging.getLogger(__name__)
 
@@ -146,9 +158,10 @@ def _select_similar_precedents(
     Aims for a balanced mix of favorable / unfavorable outcomes.
     Falls back to random if embedder is unavailable.
     """
+    excl_family = case_family(exclude_citation)
     candidates = [
         c for c in pool
-        if c.get("citation") != exclude_citation
+        if case_family(c.get("citation")) != excl_family
         and _get(c, _TEXT_FIELDS)
     ]
     if not candidates:
@@ -382,10 +395,11 @@ class BanglaLexEvaluator:
             ]
 
         # ── Fix 2: Similarity-based precedents ────────────────────────────
+        this_family = case_family(citation)
         domain_pool = [
             c for c in all_cases
             if (_get(c, _DOMAIN_FIELDS) or "").lower() == domain
-            and c.get("citation") != citation
+            and case_family(c.get("citation")) != this_family
             and _get(c, _TEXT_FIELDS)
         ]
         try:
@@ -393,8 +407,12 @@ class BanglaLexEvaluator:
         except Exception:
             embedder   = None
 
+        # Precedent count is env-controlled so the ablation is reproducible:
+        #   BANGLALEX_N_PRECEDENTS=0  -> no precedent augmentation
+        #   unset (default 4)         -> full system
         precedents = _select_similar_precedents(
-            facts, domain_pool, n=4,
+            facts, domain_pool,
+            n=int(os.environ.get("BANGLALEX_N_PRECEDENTS", "4")),
             embedder=embedder,
             exclude_citation=citation,
         )

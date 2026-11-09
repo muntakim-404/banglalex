@@ -22,6 +22,7 @@ import argparse
 import json
 import logging
 import random
+import re
 import sys
 import time
 from collections import defaultdict
@@ -66,6 +67,11 @@ def load_balanced_sample(cases_path, n_per_domain, seed):
 
     by_domain = defaultdict(list)
     for case in all_cases:
+        # Test cases must be REAL cases only. Augmented copies are paraphrases
+        # of a source case and carry the same label, so testing on them means
+        # testing on a reworded case whose original sits in the precedent pool.
+        if case.get("is_augmented"):
+            continue
         domain  = (_get(case, _DOMAIN_FIELDS) or "").lower()
         outcome = normalize_outcome(_get(case, _OUTCOME_FIELDS) or "")
         text    = _get(case, _TEXT_FIELDS)
@@ -97,7 +103,7 @@ def load_existing(path: Path):
 
 def parse_args():
     p = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    p.add_argument("--n-per-domain",  type=int,   default=25,
+    p.add_argument("--n-per-domain",  type=int,   default=20,
                    help="Cases per domain. 25 × 3 = 75 total fits within 100k token budget.")
     p.add_argument("--kb-dir",                     default="data/knowledge_base")
     p.add_argument("--cases-path",                 default="data/annotated/cases_augmented.json")

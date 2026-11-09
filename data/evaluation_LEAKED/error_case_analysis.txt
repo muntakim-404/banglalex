@@ -1,0 +1,293 @@
+══════════════════════════════════════════════════════════════════════
+  BanglaLex — Error Case Deep Analysis
+  Six misclassified cases: full pipeline trace
+══════════════════════════════════════════════════════════════════════
+
+──────────────────────────────────────────────────────────────────────
+  Error Case 1/6
+  Citation    : 17 SCOB [2023] HCD 7
+  Domain      : CONTRACT
+  True outcome: UNFAVORABLE
+  Predicted   : FAVORABLE  (confidence: 0.800)
+──────────────────────────────────────────────────────────────────────
+
+  CASE FACTS (first 600 chars):
+  The plaintiff                                  (the applicant-auction purchaser) was the highest                                  bidder of the auction-sold vessel who prayed for                                  an order from the High Court Division for a direction                                  to the Marshall of the Court to deliver the auction-sold                                  vessel to him without payment of any customs duties                                  and VAT. He claimed that previously the Assistant                                  Commissioner of Customs of Chattogra
+
+  PIPELINE TRACE:
+
+  [Agent 1 — Consultation]
+  Facts extracted : The plaintiff 
+                                (the applicant-auction purchaser) was the highest 
+                                bidder of the auction-sold vessel who prayed for 
+                                an order from the High Court Division for a direction 
+                             
+  Key claims      : —
+
+  [Agent 2 — Knowledge Integration]
+  • No statutes identified (raw FAISS retrieval used)
+
+  [Agent 3 — Judgment]
+  Predicted       : FAVORABLE
+  Confidence      : 0.8
+
+  Reasoning chain:
+    —.
+
+  Supporting factors:
+
+  Risk factors:
+
+  ERROR DIAGNOSIS:
+  No risk factors were identified — the pipeline saw no unfavorable signals in the retrieved context.
+
+──────────────────────────────────────────────────────────────────────
+  Error Case 2/6
+  Citation    : 7 SCOB [2016] HCD 64
+  Domain      : LAND
+  True outcome: FAVORABLE
+  Predicted   : FAVORABLE  (confidence: 0.800)
+──────────────────────────────────────────────────────────────────────
+
+  CASE FACTS (first 600 chars):
+  Pre-emption case where the pre-emptee claimed protection under Section 96(10) of the State Acquisition and Tenancy Act as a relation within three degrees. Court examined whether a brother-in-law qualified within three degrees of consanguinity under the Succession Act.
+
+  PIPELINE TRACE:
+
+  [Agent 1 — Consultation]
+  Facts extracted : Pre-emption case where the pre-emptee claimed protection under Section 96(10) of the State Acquisition and Tenancy Act as a relation within three degrees. Court examined whether a brother-in-law qualified within three degrees of consanguinity under the Succession Act.
+  Key claims      : —
+
+  [Agent 2 — Knowledge Integration]
+  • No statutes identified (raw FAISS retrieval used)
+
+  [Agent 3 — Judgment]
+  Predicted       : FAVORABLE
+  Confidence      : 0.8
+
+  Reasoning chain:
+    —.
+
+  Supporting factors:
+
+  Risk factors:
+
+  ERROR DIAGNOSIS:
+  No risk factors were identified — the pipeline saw no unfavorable signals in the retrieved context.
+
+──────────────────────────────────────────────────────────────────────
+  Error Case 3/6
+  Citation    : 7 SCOB [2016] HCD 156
+  Domain      : CONTRACT
+  True outcome: UNFAVORABLE
+  Predicted   : FAVORABLE  (confidence: 0.800)
+──────────────────────────────────────────────────────────────────────
+
+  CASE FACTS (first 600 chars):
+  Artha Rin suit where the borrower sought court intervention to exempt him from paying high interest on a bank loan. Court examined whether Artha Rin courts had power to exempt defendants from interest liability under the Artha Rin Adalat Ain.
+
+  PIPELINE TRACE:
+
+  [Agent 1 — Consultation]
+  Facts extracted : Artha Rin suit where the borrower sought court intervention to exempt him from paying high interest on a bank loan. Court examined whether Artha Rin courts had power to exempt defendants from interest liability under the Artha Rin Adalat Ain.
+  Key claims      : —
+
+  [Agent 2 — Knowledge Integration]
+  • No statutes identified (raw FAISS retrieval used)
+
+  [Agent 3 — Judgment]
+  Predicted       : FAVORABLE
+  Confidence      : 0.8
+
+  Reasoning chain:
+    —.
+
+  Supporting factors:
+
+  Risk factors:
+
+  ERROR DIAGNOSIS:
+  No risk factors were identified — the pipeline saw no unfavorable signals in the retrieved context.
+
+──────────────────────────────────────────────────────────────────────
+  Error Case 4/6
+  Citation    : 16 SCOB [2022] HCD 217
+  Domain      : CONTRACT
+  True outcome: UNFAVORABLE
+  Predicted   : FAVORABLE  (confidence: 0.800)
+──────────────────────────────────────────────────────────────────────
+
+  CASE FACTS (first 600 chars):
+  Bank obtained certificate of ownership in Artha Rin execution case but did not take physical possession. After execution case was disposed, judgment-debtor applied to redeem mortgaged property by depositing outstanding dues. Bank argued executing court became functus officio after disposing the case.
+
+  PIPELINE TRACE:
+
+  [Agent 1 — Consultation]
+  Facts extracted : Bank obtained certificate of ownership in Artha Rin execution case but did not take physical possession. After execution case was disposed, judgment-debtor applied to redeem mortgaged property by depositing outstanding dues. Bank argued executing court became functus officio after disposing the case
+  Key claims      : —
+
+  [Agent 2 — Knowledge Integration]
+  • No statutes identified (raw FAISS retrieval used)
+
+  [Agent 3 — Judgment]
+  Predicted       : FAVORABLE
+  Confidence      : 0.8
+
+  Reasoning chain:
+    —.
+
+  Supporting factors:
+
+  Risk factors:
+
+  ERROR DIAGNOSIS:
+  No risk factors were identified — the pipeline saw no unfavorable signals in the retrieved context.
+
+──────────────────────────────────────────────────────────────────────
+  Error Case 5/6
+  Citation    : 7 SCOB [2016] HCD 64
+  Domain      : LAND
+  True outcome: UNFAVORABLE
+  Predicted   : FAVORABLE  (confidence: 0.800)
+──────────────────────────────────────────────────────────────────────
+
+  CASE FACTS (first 600 chars):
+  Pre-emption case where the pre-emptee claimed protection under sub-section 10 of Section 96 of the State Acquisition and Tenancy Act as a relation within three degrees by consanguinity. Court examined the table of kindred under Schedule 1 of the Indian Succession Act 1925 and found that a brother-in-law does not fall within three degrees by consanguinity.
+
+  PIPELINE TRACE:
+
+  [Agent 1 — Consultation]
+  Facts extracted : Pre-emption case where the pre-emptee claimed protection under sub-section 10 of Section 96 of the State Acquisition and Tenancy Act as a relation within three degrees by consanguinity. Court examined the table of kindred under Schedule 1 of the Indian Succession Act 1925 and found that a brother-in
+  Key claims      : —
+
+  [Agent 2 — Knowledge Integration]
+  • No statutes identified (raw FAISS retrieval used)
+
+  [Agent 3 — Judgment]
+  Predicted       : FAVORABLE
+  Confidence      : 0.8
+
+  Reasoning chain:
+    —.
+
+  Supporting factors:
+
+  Risk factors:
+
+  ERROR DIAGNOSIS:
+  No risk factors were identified — the pipeline saw no unfavorable signals in the retrieved context.
+
+──────────────────────────────────────────────────────────────────────
+  Error Case 6/6
+  Citation    : 7 SCOB [2016] HCD 156
+  Domain      : CONTRACT
+  True outcome: FAVORABLE
+  Predicted   : FAVORABLE  (confidence: 0.800)
+──────────────────────────────────────────────────────────────────────
+
+  CASE FACTS (first 600 chars):
+  Sonali Bank challenged a lower court order that purported to exempt the defendant from liability of paying interest on a loan. The bank argued that only the financial institution itself has the exclusive right to exempt any person from payment of interest, not the court.
+
+  PIPELINE TRACE:
+
+  [Agent 1 — Consultation]
+  Facts extracted : Sonali Bank challenged a lower court order that purported to exempt the defendant from liability of paying interest on a loan. The bank argued that only the financial institution itself has the exclusive right to exempt any person from payment of interest, not the court.
+  Key claims      : —
+
+  [Agent 2 — Knowledge Integration]
+  • No statutes identified (raw FAISS retrieval used)
+
+  [Agent 3 — Judgment]
+  Predicted       : FAVORABLE
+  Confidence      : 0.8
+
+  Reasoning chain:
+    —.
+
+  Supporting factors:
+
+  Risk factors:
+
+  ERROR DIAGNOSIS:
+  No risk factors were identified — the pipeline saw no unfavorable signals in the retrieved context.
+
+──────────────────────────────────────────────────────────────────────
+  Error Case 7/6
+  Citation    : AUG1-18 SCOB [2023] HCD 15
+  Domain      : LAND
+  True outcome: UNFAVORABLE
+  Predicted   : FAVORABLE  (confidence: 0.800)
+──────────────────────────────────────────────────────────────────────
+
+  CASE FACTS (first 600 chars):
+  The pre-emptors in this case argued that they were not informed about the sale of the land in question to the pre-emptee. After learning of the sale, they acquired a certified copy of the deed and promptly filed their pre-emption claim. However, the pre-emptee alleged that prior to the execution of the sale deed, the pre-emptors had been approached by the pre-emptee's associates to purchase the land but refused, and as a result, the land was transferred to the pre-emptee. The trial court initially rejected the pre-emptors' claim, and the appellate court upheld this decision. Upon further revie
+
+  PIPELINE TRACE:
+
+  [Agent 1 — Consultation]
+  Facts extracted : The pre-emptors in this case argued that they were not informed about the sale of the land in question to the pre-emptee. After learning of the sale, they acquired a certified copy of the deed and promptly filed their pre-emption claim. However, the pre-emptee alleged that prior to the execution of 
+  Key claims      : —
+
+  [Agent 2 — Knowledge Integration]
+  • No statutes identified (raw FAISS retrieval used)
+
+  [Agent 3 — Judgment]
+  Predicted       : FAVORABLE
+  Confidence      : 0.8
+
+  Reasoning chain:
+    —.
+
+  Supporting factors:
+
+  Risk factors:
+
+  ERROR DIAGNOSIS:
+  No risk factors were identified — the pipeline saw no unfavorable signals in the retrieved context.
+
+──────────────────────────────────────────────────────────────────────
+  Error Case 8/6
+  Citation    : AUG2-20 SCOB [2025] HCD 13
+  Domain      : CONTRACT
+  True outcome: UNFAVORABLE
+  Predicted   : FAVORABLE  (confidence: 0.800)
+──────────────────────────────────────────────────────────────────────
+
+  CASE FACTS (first 600 chars):
+  In a lawsuit filed on behalf of minors who had entered into a binding contract with the respondent, a significant amount of consideration was received and accepted by the respondent, only to be subsequently refused for a sale deed. The minors then pursued a claim for specific performance in court, but the court's initial dismissal was upheld on appeal due to a determination that the contract was invalid from its inception because minors are statutorily prohibited from forming contracts under the provisions of the Indian Contract Act of 1872, specifically section 11.   As the minors were dissat
+
+  PIPELINE TRACE:
+
+  [Agent 1 — Consultation]
+  Facts extracted : In a lawsuit filed on behalf of minors who had entered into a binding contract with the respondent, a significant amount of consideration was received and accepted by the respondent, only to be subsequently refused for a sale deed. The minors then pursued a claim for specific performance in court, b
+  Key claims      : —
+
+  [Agent 2 — Knowledge Integration]
+  • No statutes identified (raw FAISS retrieval used)
+
+  [Agent 3 — Judgment]
+  Predicted       : FAVORABLE
+  Confidence      : 0.8
+
+  Reasoning chain:
+    —.
+
+  Supporting factors:
+
+  Risk factors:
+
+  ERROR DIAGNOSIS:
+  No risk factors were identified — the pipeline saw no unfavorable signals in the retrieved context.
+
+══════════════════════════════════════════════════════════════════════
+  CROSS-CASE PATTERN SUMMARY
+══════════════════════════════════════════════════════════════════════
+
+  Average supporting factors per error case : 0.0
+  Average risk factors per error case      : 0.0
+
+  Consistent pattern across all 8 errors:
+  The pipeline retrieved statutes supporting the petitioner's claim
+  but consistently failed to weight the respondent's counter-arguments
+  or the procedural bars (limitation, lack of standing, estoppel)
+  that led to the actual unfavorable outcome in these cases.

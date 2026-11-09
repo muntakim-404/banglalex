@@ -1,0 +1,31 @@
+{
+  "method": "XLM-RoBERTa (fine-tuned)",
+  "n_total": 60,
+  "n_decided": 60,
+  "abstention_rate": 0.0,
+  "overall_accuracy": 0.6167,
+  "macro_f1": 0.4998,
+  "macro_precision": 0.5673,
+  "macro_recall": 0.5329,
+  "favorable_f1": 0.7416,
+  "favorable_prec": 0.6346,
+  "favorable_rec": 0.8919,
+  "unfavorable_f1": 0.2581,
+  "unfavorable_prec": 0.5,
+  "unfavorable_rec": 0.1739,
+  "domain_accuracy": {
+    "contract": 0.55,
+    "land": 0.6,
+    "service": 0.7
+  },
+  "confusion_matrix": {
+    "unfavorable": {
+      "unfavorable": 4,
+      "favorable": 19
+    },
+    "favorable": {
+      "favorable": 33,
+      "unfavorable": 4
+    }
+  }
+}

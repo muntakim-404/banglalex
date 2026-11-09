@@ -15,6 +15,7 @@ import argparse
 import json
 import logging
 import random
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -86,18 +87,24 @@ def get_split(cases_path, n_per_domain=50, seed=42):
         if domain and outcome and text:
             by_domain[domain].append(case)
 
-    test_cases = []
-    test_cits  = set()
+    def _family(cit):
+        return re.sub(r"^AUG\d+-", "", str(cit or "")).strip()
+
+    test_cases    = []
+    test_families = set()
     for domain, cases in sorted(by_domain.items()):
+        cases  = [c for c in cases if not c.get("is_augmented")]   # real only
         n      = min(n_per_domain, len(cases))
         chosen = random.sample(cases, n)
         test_cases.extend(chosen)
         for c in chosen:
-            test_cits.add(c.get("citation", id(c)))
+            test_families.add(_family(c.get("citation", id(c))))
 
+    # Exclude the whole augmentation family, not just the exact citation:
+    # AUG1-X is a paraphrase of X with the same label.
     train_cases = [
         c for c in all_cases
-        if c.get("citation", id(c)) not in test_cits
+        if _family(c.get("citation", id(c))) not in test_families
         and normalize_outcome(_get(c, _OUTCOME_FIELDS) or "")
         and _get(c, _TEXT_FIELDS)
     ]

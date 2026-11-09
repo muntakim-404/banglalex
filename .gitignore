@@ -15,4 +15,3 @@ data/statutes/processed_law.json
 data/statutes/meta.json
 data/statutes/filtered_act_list.csv
 data/statutes/acts/
-.env

@@ -1,0 +1,7 @@
+domain,citation,ground_truth,predicted,confidence
+land,AUG1-18 SCOB [2023] HCD 15,unfavorable,favorable,0.8
+land,7 SCOB [2016] HCD 64,unfavorable,favorable,0.8
+contract,16 SCOB [2022] HCD 217,unfavorable,favorable,0.8
+contract,17 SCOB [2023] HCD 7,unfavorable,favorable,0.8
+contract,AUG2-20 SCOB [2025] HCD 13,unfavorable,favorable,0.8
+contract,7 SCOB [2016] HCD 156,unfavorable,favorable,0.8

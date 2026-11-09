@@ -69,7 +69,7 @@ class GeminiAgent:
     temperature : 0.0–1.0; low = more deterministic
     """
 
-    DEFAULT_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
+    DEFAULT_MODEL = "openai/gpt-oss-120b"
 
     def __init__(
         self,
